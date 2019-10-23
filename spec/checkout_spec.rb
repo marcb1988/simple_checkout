@@ -8,6 +8,8 @@ describe Checkout do
   end
 
   it "allows shoppers to scan items for purchase" do
+    checkout.scan("Milk")
+    expect(checkout.scanned_items).to include "Milk"
   end
 
   it "shows the total of all scanned items" do

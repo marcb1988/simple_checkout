@@ -7,5 +7,9 @@ class Checkout
       "Eggs" => 1.40,
       "Bread" => 0.90,
     }
+    @scanned_items = []
+  end
+
+  def scan(product)
   end
 end
